@@ -1,6 +1,5 @@
 using System;
 using Assets.src.g;
-using Mod.Plugin;
 
 public class GameScr : mScreen, IChatable
 {
@@ -10,11 +9,11 @@ public class GameScr : mScreen, IChatable
 
 	public long timeEndDblClick;
 
-	public static bool isPaintOther;
+	public static bool isPaintOther = false;
 
-	public static MyVector textTime;
+	public static MyVector textTime = new MyVector(string.Empty);
 
-	public static bool isLoadAllData;
+	public static bool isLoadAllData = false;
 
 	public static GameScr instance;
 
@@ -120,41 +119,41 @@ public class GameScr : mScreen, IChatable
 
 	private bool isChangeSkill;
 
-	public static MyVector vClan;
+	public static MyVector vClan = new MyVector();
 
-	public static MyVector vPtMap;
+	public static MyVector vPtMap = new MyVector();
 
-	public static MyVector vFriend;
+	public static MyVector vFriend = new MyVector();
 
-	public static MyVector vEnemies;
+	public static MyVector vEnemies = new MyVector();
 
-	public static MyVector vCharInMap;
+	public static MyVector vCharInMap = new MyVector();
 
-	public static MyVector vItemMap;
+	public static MyVector vItemMap = new MyVector();
 
-	public static MyVector vMobAttack;
+	public static MyVector vMobAttack = new MyVector();
 
-	public static MyVector vSet;
+	public static MyVector vSet = new MyVector();
 
-	public static MyVector vMob;
+	public static MyVector vMob = new MyVector();
 
-	public static MyVector vNpc;
+	public static MyVector vNpc = new MyVector();
 
-	public static MyVector vFlag;
+	public static MyVector vFlag = new MyVector();
 
 	public static NClass[] nClasss;
 
-	public static int indexSize;
+	public static int indexSize = 28;
 
-	public static int indexTitle;
+	public static int indexTitle = 0;
 
-	public static int indexSelect;
+	public static int indexSelect = 0;
 
-	public static int indexRow;
+	public static int indexRow = -1;
 
 	public static int indexRowMax;
 
-	public static int indexMenu;
+	public static int indexMenu = 0;
 
 	public Item itemFocus;
 
@@ -162,109 +161,109 @@ public class GameScr : mScreen, IChatable
 
 	public SkillOptionTemplate[] sOptionTemplates;
 
-	private static Scroll scrInfo;
+	private static Scroll scrInfo = new Scroll();
 
-	public static Scroll scrMain;
+	public static Scroll scrMain = new Scroll();
 
-	public static MyVector vItemUpGrade;
+	public static MyVector vItemUpGrade = new MyVector();
 
 	public static bool isTypeXu;
 
 	public static bool isViewNext;
 
-	public static bool isViewClanMemOnline;
+	public static bool isViewClanMemOnline = false;
 
-	public static bool isViewClanInvite;
+	public static bool isViewClanInvite = true;
 
 	public static bool isChop;
 
-	public static string titleInputText;
+	public static string titleInputText = string.Empty;
 
 	public static int tickMove;
 
-	public static bool isPaintAlert;
+	public static bool isPaintAlert = false;
 
-	public static bool isPaintTask;
+	public static bool isPaintTask = false;
 
-	public static bool isPaintTeam;
+	public static bool isPaintTeam = false;
 
-	public static bool isPaintFindTeam;
+	public static bool isPaintFindTeam = false;
 
-	public static bool isPaintFriend;
+	public static bool isPaintFriend = false;
 
-	public static bool isPaintEnemies;
+	public static bool isPaintEnemies = false;
 
-	public static bool isPaintItemInfo;
+	public static bool isPaintItemInfo = false;
 
-	public static bool isHaveSelectSkill;
+	public static bool isHaveSelectSkill = false;
 
-	public static bool isPaintSkill;
+	public static bool isPaintSkill = false;
 
-	public static bool isPaintInfoMe;
+	public static bool isPaintInfoMe = false;
 
-	public static bool isPaintStore;
+	public static bool isPaintStore = false;
 
-	public static bool isPaintNonNam;
+	public static bool isPaintNonNam = false;
 
-	public static bool isPaintNonNu;
+	public static bool isPaintNonNu = false;
 
-	public static bool isPaintAoNam;
+	public static bool isPaintAoNam = false;
 
-	public static bool isPaintAoNu;
+	public static bool isPaintAoNu = false;
 
-	public static bool isPaintGangTayNam;
+	public static bool isPaintGangTayNam = false;
 
-	public static bool isPaintGangTayNu;
+	public static bool isPaintGangTayNu = false;
 
-	public static bool isPaintQuanNam;
+	public static bool isPaintQuanNam = false;
 
-	public static bool isPaintQuanNu;
+	public static bool isPaintQuanNu = false;
 
-	public static bool isPaintGiayNam;
+	public static bool isPaintGiayNam = false;
 
-	public static bool isPaintGiayNu;
+	public static bool isPaintGiayNu = false;
 
-	public static bool isPaintLien;
+	public static bool isPaintLien = false;
 
-	public static bool isPaintNhan;
+	public static bool isPaintNhan = false;
 
-	public static bool isPaintNgocBoi;
+	public static bool isPaintNgocBoi = false;
 
-	public static bool isPaintPhu;
+	public static bool isPaintPhu = false;
 
-	public static bool isPaintWeapon;
+	public static bool isPaintWeapon = false;
 
-	public static bool isPaintStack;
+	public static bool isPaintStack = false;
 
-	public static bool isPaintStackLock;
+	public static bool isPaintStackLock = false;
 
-	public static bool isPaintGrocery;
+	public static bool isPaintGrocery = false;
 
-	public static bool isPaintGroceryLock;
+	public static bool isPaintGroceryLock = false;
 
-	public static bool isPaintUpGrade;
+	public static bool isPaintUpGrade = false;
 
-	public static bool isPaintConvert;
+	public static bool isPaintConvert = false;
 
-	public static bool isPaintUpGradeGold;
+	public static bool isPaintUpGradeGold = false;
 
-	public static bool isPaintUpPearl;
+	public static bool isPaintUpPearl = false;
 
-	public static bool isPaintBox;
+	public static bool isPaintBox = false;
 
-	public static bool isPaintSplit;
+	public static bool isPaintSplit = false;
 
-	public static bool isPaintCharInMap;
+	public static bool isPaintCharInMap = false;
 
-	public static bool isPaintTrade;
+	public static bool isPaintTrade = false;
 
-	public static bool isPaintZone;
+	public static bool isPaintZone = false;
 
-	public static bool isPaintMessage;
+	public static bool isPaintMessage = false;
 
-	public static bool isPaintClan;
+	public static bool isPaintClan = false;
 
-	public static bool isRequestMember;
+	public static bool isRequestMember = false;
 
 	public static Char currentCharViewInfo;
 
@@ -426,13 +425,13 @@ public class GameScr : mScreen, IChatable
 
 	public int timeStartMap;
 
-	public static sbyte typeViewInfo;
+	public static sbyte typeViewInfo = 0;
 
-	public static sbyte typeActive;
+	public static sbyte typeActive = 0;
 
-	public static InfoMe info1;
+	public static InfoMe info1 = new InfoMe();
 
-	public static InfoMe info2;
+	public static InfoMe info2 = new InfoMe();
 
 	public static Image imgPanel;
 
@@ -464,17 +463,17 @@ public class GameScr : mScreen, IChatable
 
 	public static int countEff;
 
-	public static GamePad gamePad;
+	public static GamePad gamePad = new GamePad();
 
 	public static Image imgChatPC;
 
 	public static Image imgChatsPC2;
 
-	public static int isAnalog;
+	public static int isAnalog = 0;
 
-	public static Image img_ct_bar_0;
+	public static Image img_ct_bar_0 = mSystem.loadImage("/mainImage/i_pve_bar_0.png");
 
-	public static Image img_ct_bar_1;
+	public static Image img_ct_bar_1 = mSystem.loadImage("/mainImage/i_pve_bar_1.png");
 
 	public static bool isUseTouch;
 
@@ -486,15 +485,15 @@ public class GameScr : mScreen, IChatable
 
 	public Command cmdshowInfo;
 
-	private static Command[] cmdTestLogin;
+	private static Command[] cmdTestLogin = null;
 
 	public const int numSkill = 10;
 
 	public const int numSkill_2 = 5;
 
-	public static Skill[] keySkill;
+	public static Skill[] keySkill = new Skill[10];
 
-	public static Skill[] onScreenSkill;
+	public static Skill[] onScreenSkill = new Skill[10];
 
 	public Command cmdMenu;
 
@@ -588,7 +587,7 @@ public class GameScr : mScreen, IChatable
 
 	public int bgRID = -1;
 
-	public static int tam;
+	public static int tam = 0;
 
 	public static bool isAutoPlay;
 
@@ -648,13 +647,13 @@ public class GameScr : mScreen, IChatable
 
 	public static int disXC;
 
-	public static bool isPaint;
+	public static bool isPaint = true;
 
 	public static int shock_scr;
 
-	private static int[] shock_x;
+	private static int[] shock_x = new int[4] { 1, -1, 1, -1 };
 
-	private static int[] shock_y;
+	private static int[] shock_y = new int[4] { 1, -1, -1, 1 };
 
 	private int tDoubleDelay;
 
@@ -822,9 +821,9 @@ public class GameScr : mScreen, IChatable
 
 	public static int ystart;
 
-	public static int popupW;
+	public static int popupW = 140;
 
-	public static int popupH;
+	public static int popupH = 160;
 
 	public static int cmySK;
 
@@ -836,7 +835,7 @@ public class GameScr : mScreen, IChatable
 
 	public static int cmyLimSK;
 
-	public static int columns;
+	public static int columns = 6;
 
 	public static int rows;
 
@@ -850,7 +849,7 @@ public class GameScr : mScreen, IChatable
 
 	private int yPaint;
 
-	public static int indexEff;
+	public static int indexEff = 0;
 
 	public static EffectCharPaint effUpok;
 
@@ -864,17 +863,17 @@ public class GameScr : mScreen, IChatable
 
 	public Command cmdDead;
 
-	public static bool notPaint;
+	public static bool notPaint = false;
 
-	public static bool isPing;
+	public static bool isPing = false;
 
-	public static int INFO;
+	public static int INFO = 0;
 
-	public static int STORE;
+	public static int STORE = 1;
 
-	public static int ZONE;
+	public static int ZONE = 2;
 
-	public static int UPGRADE;
+	public static int UPGRADE = 3;
 
 	private int Hitem = 30;
 
@@ -890,7 +889,7 @@ public class GameScr : mScreen, IChatable
 
 	public PopUpYesNo popUpYesNo;
 
-	public static MyVector vChatVip;
+	public static MyVector vChatVip = new MyVector();
 
 	public static int vBig;
 
@@ -954,15 +953,15 @@ public class GameScr : mScreen, IChatable
 
 	public static Image imgBgIOS;
 
-	public static int nCT_TeamB;
+	public static int nCT_TeamB = 50;
 
-	public static int nCT_TeamA;
+	public static int nCT_TeamA = 50;
 
 	public static long nCT_timeBallte;
 
 	public static string nCT_team;
 
-	public static int nCT_nBoyBaller;
+	public static int nCT_nBoyBaller = 100;
 
 	public static bool isPaint_CT;
 
@@ -978,11 +977,11 @@ public class GameScr : mScreen, IChatable
 
 	private static int hRect;
 
-	public static MyVector res_CT;
+	public static MyVector res_CT = new MyVector();
 
-	public static int nTop;
+	public static int nTop = 1;
 
-	public static bool isPickNgocRong;
+	public static bool isPickNgocRong = false;
 
 	public static int nUSER_CT;
 
@@ -1744,6 +1743,30 @@ public class GameScr : mScreen, IChatable
 			{
 				Cout.LogError("Loi ham readskill: " + ex2.ToString());
 			}
+		}
+	}
+
+	public void readOk()
+	{
+		try
+		{
+			Res.outz("<readOk><vsData<" + vsData + "==" + vcData);
+			Res.outz("<readOk><vsMap<" + vsMap + "==" + vcMap);
+			Res.outz("<readOk><vsSkill<" + vsSkill + "==" + vcSkill);
+			Res.outz("<readOk><vsItem<" + vsItem + "==" + vcItem);
+			if (vsData == vcData && vsMap == vcMap && vsSkill == vcSkill && vsItem == vcItem)
+			{
+				Res.outz(vsData + "," + vsMap + "," + vsSkill + "," + vsItem);
+				gI().readDart();
+				gI().readEfect();
+				gI().readArrow();
+				gI().readSkill();
+				Service.gI().clientOk();
+			}
+		}
+		catch (Exception ex)
+		{
+			Cout.LogError("Loi ham readOk: " + ex.ToString());
 		}
 	}
 
@@ -5131,35 +5154,36 @@ public class GameScr : mScreen, IChatable
 		GameCanvas.debug("PA5", 1);
 		BackgroudEffect.paintBackAll(g);
 		EffectManager.lowEffects.paintAll(g);
-		for (int j = 0; j < Effect2.vEffectFeet.size(); j++)
+		for (int i = 0; i < Effect2.vEffectFeet.size(); i++)
 		{
-			((Effect2)Effect2.vEffectFeet.elementAt(j)).paint(g);
+			Effect2 effect = (Effect2)Effect2.vEffectFeet.elementAt(i);
+			effect.paint(g);
 		}
-		for (int k = 0; k < Teleport.vTeleport.size(); k++)
+		for (int i = 0; i < Teleport.vTeleport.size(); i++)
 		{
-			((Teleport)Teleport.vTeleport.elementAt(k)).paintHole(g);
+			((Teleport)Teleport.vTeleport.elementAt(i)).paintHole(g);
 		}
-		for (int l = 0; l < vNpc.size(); l++)
+		for (int i = 0; i < vNpc.size(); i++)
 		{
-			Npc npc = (Npc)vNpc.elementAt(l);
+			Npc npc = (Npc)vNpc.elementAt(i);
 			if (npc.cHP > 0)
 			{
 				npc.paintShadow(g);
 			}
 		}
-		for (int m = 0; m < vNpc.size(); m++)
+		for (int i = 0; i < vNpc.size(); i++)
 		{
-			((Npc)vNpc.elementAt(m)).paint(g);
+			((Npc)vNpc.elementAt(i)).paint(g);
 		}
 		g.translate(0, GameCanvas.transY);
 		GameCanvas.debug("PA7", 1);
 		GameCanvas.debug("PA8", 1);
-		for (int n = 0; n < vCharInMap.size(); n++)
+		for (int i = 0; i < vCharInMap.size(); i++)
 		{
 			Char char2 = null;
 			try
 			{
-				char2 = (Char)vCharInMap.elementAt(n);
+				char2 = (Char)vCharInMap.elementAt(i);
 			}
 			catch (Exception ex)
 			{
@@ -5172,20 +5196,20 @@ public class GameScr : mScreen, IChatable
 		}
 		Char.myCharz().paintShadow(g);
 		EffecMn.paintLayer2(g);
-		for (int num = 0; num < vMob.size(); num++)
+		for (int i = 0; i < vMob.size(); i++)
 		{
-			((Mob)vMob.elementAt(num)).paint(g);
+			((Mob)vMob.elementAt(i)).paint(g);
 		}
-		for (int num2 = 0; num2 < Teleport.vTeleport.size(); num2++)
+		for (int i = 0; i < Teleport.vTeleport.size(); i++)
 		{
-			((Teleport)Teleport.vTeleport.elementAt(num2)).paint(g);
+			((Teleport)Teleport.vTeleport.elementAt(i)).paint(g);
 		}
-		for (int num3 = 0; num3 < vCharInMap.size(); num3++)
+		for (int i = 0; i < vCharInMap.size(); i++)
 		{
 			Char char3 = null;
 			try
 			{
-				char3 = (Char)vCharInMap.elementAt(num3);
+				char3 = (Char)vCharInMap.elementAt(i);
 			}
 			catch (Exception)
 			{
@@ -5201,12 +5225,12 @@ public class GameScr : mScreen, IChatable
 			Char.myCharz().paintCharWithSkill(g);
 			Char.myCharz().paintMount2(g);
 		}
-		for (int num4 = 0; num4 < vCharInMap.size(); num4++)
+		for (int i = 0; i < vCharInMap.size(); i++)
 		{
 			Char char4 = null;
 			try
 			{
-				char4 = (Char)vCharInMap.elementAt(num4);
+				char4 = (Char)vCharInMap.elementAt(i);
 			}
 			catch (Exception ex3)
 			{
@@ -5218,9 +5242,9 @@ public class GameScr : mScreen, IChatable
 				char4.paintMount2(g);
 			}
 		}
-		for (int num5 = 0; num5 < vItemMap.size(); num5++)
+		for (int i = 0; i < vItemMap.size(); i++)
 		{
-			((ItemMap)vItemMap.elementAt(num5)).paint(g);
+			((ItemMap)vItemMap.elementAt(i)).paint(g);
 		}
 		g.translate(0, -GameCanvas.transY);
 		GameCanvas.debug("PA9", 1);
@@ -5230,25 +5254,26 @@ public class GameScr : mScreen, IChatable
 		GameCanvas.debug("PA13", 1);
 		paintEffect(g);
 		paintBgItem(g, 3);
-		for (int num6 = 0; num6 < vNpc.size(); num6++)
+		for (int i = 0; i < vNpc.size(); i++)
 		{
-			((Npc)vNpc.elementAt(num6)).paintName(g);
+			Npc npc2 = (Npc)vNpc.elementAt(i);
+			npc2.paintName(g);
 		}
 		EffecMn.paintLayer3(g);
-		for (int num7 = 0; num7 < vNpc.size(); num7++)
+		for (int i = 0; i < vNpc.size(); i++)
 		{
-			Npc npc2 = (Npc)vNpc.elementAt(num7);
-			if (npc2.chatInfo != null)
+			Npc npc3 = (Npc)vNpc.elementAt(i);
+			if (npc3.chatInfo != null)
 			{
-				npc2?.chatInfo.paint(g, npc2.cx, npc2.cy - npc2.ch - GameCanvas.transY, npc2.cdir);
+				npc3?.chatInfo.paint(g, npc3.cx, npc3.cy - npc3.ch - GameCanvas.transY, npc3.cdir);
 			}
 		}
-		for (int num8 = 0; num8 < vCharInMap.size(); num8++)
+		for (int i = 0; i < vCharInMap.size(); i++)
 		{
 			Char char5 = null;
 			try
 			{
-				char5 = (Char)vCharInMap.elementAt(num8);
+				char5 = (Char)vCharInMap.elementAt(i);
 			}
 			catch (Exception)
 			{
@@ -5265,9 +5290,9 @@ public class GameScr : mScreen, IChatable
 		EffectManager.mid_2Effects.paintAll(g);
 		EffectManager.midEffects.paintAll(g);
 		BackgroudEffect.paintFrontAll(g);
-		for (int num9 = 0; num9 < TileMap.vCurrItem.size(); num9++)
+		for (int j = 0; j < TileMap.vCurrItem.size(); j++)
 		{
-			BgItem bgItem = (BgItem)TileMap.vCurrItem.elementAt(num9);
+			BgItem bgItem = (BgItem)TileMap.vCurrItem.elementAt(j);
 			if (bgItem.idImage != -1 && bgItem.layer > 3)
 			{
 				bgItem.paint(g);
@@ -5279,7 +5304,7 @@ public class GameScr : mScreen, IChatable
 			if (percentMabu != 100)
 			{
 				int w = percentMabu * mGraphics.getImageWidth(imgHPLost) / 100;
-				_ = percentMabu;
+				int num = percentMabu;
 				g.drawImage(imgHPLost, TileMap.pxw / 2 - mGraphics.getImageWidth(imgHPLost) / 2, 220, 0);
 				g.setClip(TileMap.pxw / 2 - mGraphics.getImageWidth(imgHPLost) / 2, 220, w, 10);
 				g.drawImage(imgHP, TileMap.pxw / 2 - mGraphics.getImageWidth(imgHPLost) / 2, 220, 0);
@@ -5290,11 +5315,13 @@ public class GameScr : mScreen, IChatable
 				tMabuEff++;
 				if (GameCanvas.gameTick % 3 == 0)
 				{
-					EffecMn.addEff(new Effect(19, Res.random(TileMap.pxw / 2 - 50, TileMap.pxw / 2 + 50), 340, 2, 1, -1));
+					Effect me = new Effect(19, Res.random(TileMap.pxw / 2 - 50, TileMap.pxw / 2 + 50), 340, 2, 1, -1);
+					EffecMn.addEff(me);
 				}
 				if (GameCanvas.gameTick % 15 == 0)
 				{
-					EffecMn.addEff(new Effect(18, Res.random(TileMap.pxw / 2 - 5, TileMap.pxw / 2 + 5), Res.random(300, 320), 2, 1, -1));
+					Effect me2 = new Effect(18, Res.random(TileMap.pxw / 2 - 5, TileMap.pxw / 2 + 5), Res.random(300, 320), 2, 1, -1);
+					EffecMn.addEff(me2);
 				}
 				if (tMabuEff == 100)
 				{
@@ -5309,9 +5336,10 @@ public class GameScr : mScreen, IChatable
 		}
 		BackgroudEffect.paintFog(g);
 		bool flag = true;
-		for (int num10 = 0; num10 < BackgroudEffect.vBgEffect.size(); num10++)
+		for (int i = 0; i < BackgroudEffect.vBgEffect.size(); i++)
 		{
-			if (((BackgroudEffect)BackgroudEffect.vBgEffect.elementAt(num10)).typeEff == 0)
+			BackgroudEffect backgroudEffect = (BackgroudEffect)BackgroudEffect.vBgEffect.elementAt(i);
+			if (backgroudEffect.typeEff == 0)
 			{
 				flag = false;
 				break;
@@ -5323,21 +5351,21 @@ public class GameScr : mScreen, IChatable
 		}
 		if (flag && !isRongThanXuatHien)
 		{
-			int num11 = TileMap.pxw / (mGraphics.getImageWidth(TileMap.imgLight) + 50);
-			if (num11 <= 0)
+			int num2 = TileMap.pxw / (mGraphics.getImageWidth(TileMap.imgLight) + 50);
+			if (num2 <= 0)
 			{
-				num11 = 1;
+				num2 = 1;
 			}
 			if (TileMap.tileID != 28)
 			{
-				for (int num12 = 0; num12 < num11; num12++)
+				for (int i = 0; i < num2; i++)
 				{
-					int num13 = 100 + num12 * (mGraphics.getImageWidth(TileMap.imgLight) + 50) - cmx / 2;
-					int num14 = -20;
+					int num3 = 100 + i * (mGraphics.getImageWidth(TileMap.imgLight) + 50) - cmx / 2;
+					int num4 = -20;
 					int imageWidth = mGraphics.getImageWidth(TileMap.imgLight);
-					if (num13 + imageWidth >= cmx && num13 <= cmx + GameCanvas.w && num14 + mGraphics.getImageHeight(TileMap.imgLight) >= cmy && num14 <= cmy + GameCanvas.h)
+					if (num3 + imageWidth >= cmx && num3 <= cmx + GameCanvas.w && num4 + mGraphics.getImageHeight(TileMap.imgLight) >= cmy && num4 <= cmy + GameCanvas.h)
 					{
-						g.drawImage(TileMap.imgLight, 100 + num12 * (mGraphics.getImageWidth(TileMap.imgLight) + 50) - cmx / 2, num14, 0);
+						g.drawImage(TileMap.imgLight, 100 + i * (mGraphics.getImageWidth(TileMap.imgLight) + 50) - cmx / 2, num4, 0);
 					}
 				}
 			}
@@ -5377,15 +5405,15 @@ public class GameScr : mScreen, IChatable
 			g.translate(-g.getTranslateX(), -g.getTranslateY());
 			if ((TileMap.mapID == 128 || TileMap.mapID == 127) && mabuPercent != 0)
 			{
-				int num15 = 30;
-				int num16 = 200;
+				int num5 = 30;
+				int num6 = 200;
 				g.setColor(0);
-				g.fillRect(num15 - 27, num16 - 112, 54, 8);
+				g.fillRect(num5 - 27, num6 - 112, 54, 8);
 				g.setColor(16711680);
-				g.setClip(num15 - 25, num16 - 110, mabuPercent, 4);
-				g.fillRect(num15 - 25, num16 - 110, 50, 4);
+				g.setClip(num5 - 25, num6 - 110, mabuPercent, 4);
+				g.fillRect(num5 - 25, num6 - 110, 50, 4);
 				g.setClip(0, 0, 3000, 3000);
-				mFont.tahoma_7b_white.drawString(g, "Mabu", num15, num16 - 112 + 10, 2, mFont.tahoma_7b_dark);
+				mFont.tahoma_7b_white.drawString(g, "Mabu", num5, num6 - 112 + 10, 2, mFont.tahoma_7b_dark);
 			}
 			if (Char.myCharz().isFusion)
 			{
@@ -5400,12 +5428,12 @@ public class GameScr : mScreen, IChatable
 					Char.myCharz().fusionComplete();
 				}
 			}
-			for (int num17 = 0; num17 < vCharInMap.size(); num17++)
+			for (int i = 0; i < vCharInMap.size(); i++)
 			{
 				Char char6 = null;
 				try
 				{
-					char6 = (Char)vCharInMap.elementAt(num17);
+					char6 = (Char)vCharInMap.elementAt(i);
 				}
 				catch (Exception)
 				{
@@ -5446,38 +5474,38 @@ public class GameScr : mScreen, IChatable
 				}
 			}
 			resetTranslate(g);
-			int num18 = 100 + ((Char.vItemTime.size() != 0) ? (textTime.size() * 12) : 0);
+			int num7 = 100 + ((Char.vItemTime.size() != 0) ? (textTime.size() * 12) : 0);
 			if (Char.myCharz().clan != null)
 			{
-				int num19 = 0;
-				int num20 = 0;
-				int num21 = (GameCanvas.h - 100 - 60) / 12;
-				for (int num22 = 0; num22 < vCharInMap.size(); num22++)
+				int num8 = 0;
+				int num9 = 0;
+				int num10 = (GameCanvas.h - 100 - 60) / 12;
+				for (int i = 0; i < vCharInMap.size(); i++)
 				{
-					Char char7 = (Char)vCharInMap.elementAt(num22);
+					Char char7 = (Char)vCharInMap.elementAt(i);
 					if (char7.clanID == -1 || char7.clanID != Char.myCharz().clan.ID)
 					{
 						continue;
 					}
 					if (char7.isOutX() && char7.cx < Char.myCharz().cx)
 					{
-						int num23 = num21;
+						int num11 = num10;
 						if (Char.vItemTime.size() != 0)
 						{
-							num23 -= textTime.size();
+							num11 -= textTime.size();
 						}
-						if (num19 <= num23)
+						if (num8 <= num11)
 						{
-							mFont.tahoma_7_green.drawString(g, char7.cName, 20, num18 - 12 + num19 * 12, mFont.LEFT, mFont.tahoma_7_grey);
-							char7.paintHp(g, 10, num18 + num19 * 12 - 5);
-							num19++;
+							mFont.tahoma_7_green.drawString(g, char7.cName, 20, num7 - 12 + num8 * 12, mFont.LEFT, mFont.tahoma_7_grey);
+							char7.paintHp(g, 10, num7 + num8 * 12 - 5);
+							num8++;
 						}
 					}
-					else if (char7.isOutX() && char7.cx > Char.myCharz().cx && num20 <= num21)
+					else if (char7.isOutX() && char7.cx > Char.myCharz().cx && num9 <= num10)
 					{
-						mFont.tahoma_7_green.drawString(g, char7.cName, GameCanvas.w - 25, num18 - 12 + num20 * 12, mFont.RIGHT, mFont.tahoma_7_grey);
-						char7.paintHp(g, GameCanvas.w - 15, num18 + num20 * 12 - 5);
-						num20++;
+						mFont.tahoma_7_green.drawString(g, char7.cName, GameCanvas.w - 25, num7 - 12 + num9 * 12, mFont.RIGHT, mFont.tahoma_7_grey);
+						char7.paintHp(g, GameCanvas.w - 15, num7 + num9 * 12 - 5);
+						num9++;
 					}
 				}
 			}
@@ -5521,13 +5549,13 @@ public class GameScr : mScreen, IChatable
 					tPower = -1;
 				}
 			}
-			for (int num24 = 0; num24 < Char.vItemTime.size(); num24++)
+			for (int i = 0; i < Char.vItemTime.size(); i++)
 			{
-				((ItemTime)Char.vItemTime.elementAt(num24)).paint(g, cmdMenu.x + 32 + num24 * 24, 55);
+				((ItemTime)Char.vItemTime.elementAt(i)).paint(g, cmdMenu.x + 32 + i * 24, 55);
 			}
-			for (int num25 = 0; num25 < textTime.size(); num25++)
+			for (int i = 0; i < textTime.size(); i++)
 			{
-				((ItemTime)textTime.elementAt(num25)).paintText(g, cmdMenu.x + ((Char.vItemTime.size() == 0) ? 25 : 5), ((Char.vItemTime.size() == 0) ? 45 : 90) + num25 * 12);
+				((ItemTime)textTime.elementAt(i)).paintText(g, cmdMenu.x + ((Char.vItemTime.size() == 0) ? 25 : 5), ((Char.vItemTime.size() == 0) ? 45 : 90) + i * 12);
 			}
 			paintXoSo(g);
 			if (mResources.language == 1)
@@ -5537,25 +5565,25 @@ public class GameScr : mScreen, IChatable
 			}
 			if (!yourNumber.Equals(string.Empty))
 			{
-				for (int num26 = 0; num26 < strPaint.Length; num26++)
+				for (int i = 0; i < strPaint.Length; i++)
 				{
-					mFont.tahoma_7b_white.drawString(g, strPaint[num26], 5, 85 + num26 * 18, 0, mFont.tahoma_7b_dark);
+					mFont.tahoma_7b_white.drawString(g, strPaint[i], 5, 85 + i * 18, 0, mFont.tahoma_7b_dark);
 				}
 			}
 		}
-		int num27 = 0;
-		int num28 = GameCanvas.hw;
-		if (num28 > 200)
+		int num12 = 0;
+		int num13 = GameCanvas.hw;
+		if (num13 > 200)
 		{
-			num28 = 200;
+			num13 = 200;
 		}
-		paintPhuBanBar(g, num27 + GameCanvas.w / 2, 0, num28);
+		paintPhuBanBar(g, num12 + GameCanvas.w / 2, 0, num13);
 		EffectManager.hiEffects.paintAll(g);
 		if (nCT_timeBallte > mSystem.currentTimeMillis() && TileMap.mapID == 170 && isPaint_CT && nCT_nBoyBaller / 2 > 0)
 		{
 			try
 			{
-				paint_CT(g, num27 + GameCanvas.w / 2, 0, num28);
+				paint_CT(g, num12 + GameCanvas.w / 2, 0, num13);
 			}
 			catch (Exception)
 			{
@@ -5563,10 +5591,9 @@ public class GameScr : mScreen, IChatable
 		}
 		if (TileMap.mapID == 172)
 		{
-			_ = mResources.WAIT + "  " + nUSER_CT + "/" + nUSER_MAX_CT;
+			string text = mResources.WAIT + "  " + nUSER_CT + "/" + nUSER_MAX_CT;
 			mFont.tahoma_7b_dark.drawString(g, mResources.WAIT + "  " + nUSER_CT + "/" + nUSER_MAX_CT, GameCanvas.w - 10, 40, 1);
 		}
-		Mod.Plugin.Paint.paint(g);
 	}
 
 	private void paintXoSo(mGraphics g)
@@ -7887,108 +7914,5 @@ public class GameScr : mScreen, IChatable
 			num3 = width;
 		}
 		g.drawRegion(imgHP_NEW, 0, 0, 80, num4, 0, x2, num + 6, 0);
-	}
-
-	static GameScr()
-	{
-		isPaintOther = false;
-		textTime = new MyVector(string.Empty);
-		isLoadAllData = false;
-		vClan = new MyVector();
-		vPtMap = new MyVector();
-		vFriend = new MyVector();
-		vEnemies = new MyVector();
-		vCharInMap = new MyVector();
-		vItemMap = new MyVector();
-		vMobAttack = new MyVector();
-		vSet = new MyVector();
-		vMob = new MyVector();
-		vNpc = new MyVector();
-		vFlag = new MyVector();
-		indexSize = 28;
-		indexTitle = 0;
-		indexSelect = 0;
-		indexRow = -1;
-		indexMenu = 0;
-		scrInfo = new Scroll();
-		scrMain = new Scroll();
-		vItemUpGrade = new MyVector();
-		isViewClanMemOnline = false;
-		isViewClanInvite = true;
-		titleInputText = string.Empty;
-		isPaintAlert = false;
-		isPaintTask = false;
-		isPaintTeam = false;
-		isPaintFindTeam = false;
-		isPaintFriend = false;
-		isPaintEnemies = false;
-		isPaintItemInfo = false;
-		isHaveSelectSkill = false;
-		isPaintSkill = false;
-		isPaintInfoMe = false;
-		isPaintStore = false;
-		isPaintNonNam = false;
-		isPaintNonNu = false;
-		isPaintAoNam = false;
-		isPaintAoNu = false;
-		isPaintGangTayNam = false;
-		isPaintGangTayNu = false;
-		isPaintQuanNam = false;
-		isPaintQuanNu = false;
-		isPaintGiayNam = false;
-		isPaintGiayNu = false;
-		isPaintLien = false;
-		isPaintNhan = false;
-		isPaintNgocBoi = false;
-		isPaintPhu = false;
-		isPaintWeapon = false;
-		isPaintStack = false;
-		isPaintStackLock = false;
-		isPaintGrocery = false;
-		isPaintGroceryLock = false;
-		isPaintUpGrade = false;
-		isPaintConvert = false;
-		isPaintUpGradeGold = false;
-		isPaintUpPearl = false;
-		isPaintBox = false;
-		isPaintSplit = false;
-		isPaintCharInMap = false;
-		isPaintTrade = false;
-		isPaintZone = false;
-		isPaintMessage = false;
-		isPaintClan = false;
-		isRequestMember = false;
-		typeViewInfo = 0;
-		typeActive = 0;
-		info1 = new InfoMe();
-		info2 = new InfoMe();
-		gamePad = new GamePad();
-		isAnalog = 0;
-		img_ct_bar_0 = mSystem.loadImage("/mainImage/i_pve_bar_0.png");
-		img_ct_bar_1 = mSystem.loadImage("/mainImage/i_pve_bar_1.png");
-		cmdTestLogin = null;
-		keySkill = new Skill[10];
-		onScreenSkill = new Skill[10];
-		tam = 0;
-		isPaint = true;
-		shock_x = new int[4] { 1, -1, 1, -1 };
-		shock_y = new int[4] { 1, -1, -1, 1 };
-		popupW = 140;
-		popupH = 160;
-		columns = 6;
-		indexEff = 0;
-		notPaint = false;
-		isPing = false;
-		INFO = 0;
-		STORE = 1;
-		ZONE = 2;
-		UPGRADE = 3;
-		vChatVip = new MyVector();
-		nCT_TeamB = 50;
-		nCT_TeamA = 50;
-		nCT_nBoyBaller = 100;
-		res_CT = new MyVector();
-		nTop = 1;
-		isPickNgocRong = false;
 	}
 }

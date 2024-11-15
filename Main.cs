@@ -13,7 +13,7 @@ public class Main : MonoBehaviour
 
     public static GameMidlet midlet;
 
-    public static string res;
+    public static string res = "res";
 
     public static string mainThreadName;
 
@@ -35,9 +35,9 @@ public class Main : MonoBehaviour
 
     public static int versionIp;
 
-    public static int numberQuit;
+    public static int numberQuit = 1;
 
-    public static int typeClient;
+    public static int typeClient = 4;
 
     public const sbyte PC_VERSION = 4;
 
@@ -55,9 +55,9 @@ public class Main : MonoBehaviour
 
     private int count;
 
-    public int fps;
+    private int fps;
 
-    public int max;
+    private int max;
 
     private int up;
 
@@ -75,27 +75,35 @@ public class Main : MonoBehaviour
 
     public static bool isResume;
 
-    public static bool isMiniApp;
+    public static bool isMiniApp = true;
 
     public static bool isQuitApp;
 
-    private Vector2 lastMousePos;
+    private Vector2 lastMousePos = default(Vector2);
 
-    public static int a;
+    public static int a = 1;
 
-    public static bool isCompactDevice;
+    public static bool isCompactDevice = true;
+
     [DllImport("Kernel32.dll")]
     private static extern bool AllocConsole();
 
     [DllImport("msvcrt.dll")]
     public static extern int system(string cmd);
+    //clear all the texts in allocconsole
+    public static void ClearAllocConsole()
+    {
+        system("CLS");
+    }
     private void Start()
     {
+        AllocConsole();
+        Console.SetOut(new StreamWriter(Console.OpenStandardOutput()) { AutoFlush = true });
+        Application.logMessageReceivedThreaded += (condition, stackTrace, type) => Console.WriteLine(condition + " " + stackTrace);
         if (started)
         {
             return;
         }
-        Time.timeScale = 2f;
         if (Thread.CurrentThread.Name != "Main")
         {
             Thread.CurrentThread.Name = "Main";
@@ -115,9 +123,6 @@ public class Main : MonoBehaviour
                 Screen.SetResolution(1024, 600, fullscreen: false);
             }
         }
-        AllocConsole();
-        Console.SetOut(new StreamWriter(Console.OpenStandardOutput()) { AutoFlush = true });
-        Application.logMessageReceivedThreaded += (condition, stackTrace, type) => Console.WriteLine(condition + " " + stackTrace);
     }
 
     private void SetInit()
@@ -233,7 +238,7 @@ public class Main : MonoBehaviour
 
     public string GetMacAddress()
     {
-        _ = string.Empty;
+        string empty = string.Empty;
         NetworkInterface[] allNetworkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
         for (int i = 0; i < allNetworkInterfaces.Length; i++)
         {
@@ -248,11 +253,15 @@ public class Main : MonoBehaviour
 
     public void doClearRMS()
     {
-        if (isPC && Rms.loadRMSInt("lastZoomlevel") != mGraphics.zoomLevel)
+        if (isPC)
         {
-            Rms.clearAll();
-            Rms.saveRMSInt("lastZoomlevel", mGraphics.zoomLevel);
-            Rms.saveRMSInt("levelScreenKN", level);
+            int num = Rms.loadRMSInt("lastZoomlevel");
+            if (num != mGraphics.zoomLevel)
+            {
+                Rms.clearAll();
+                Rms.saveRMSInt("lastZoomlevel", mGraphics.zoomLevel);
+                Rms.saveRMSInt("levelScreenKN", level);
+            }
         }
     }
 
@@ -297,7 +306,7 @@ public class Main : MonoBehaviour
             }
             if (!isPC)
             {
-                _ = 1 / a;
+                int num = 1 / a;
             }
         }
     }
@@ -336,11 +345,11 @@ public class Main : MonoBehaviour
             {
                 switch (Event.current.keyCode)
                 {
-                    case KeyCode.Minus:
-                        num = 95;
-                        break;
                     case KeyCode.Alpha2:
                         num = 64;
+                        break;
+                    case KeyCode.Minus:
+                        num = 95;
                         break;
                 }
             }
@@ -360,11 +369,11 @@ public class Main : MonoBehaviour
         if (isPC)
         {
             GameMidlet.gameCanvas.scrollMouse((int)(Input.GetAxis("Mouse ScrollWheel") * 10f));
-            int num3 = (int)Input.mousePosition.x;
+            float x = Input.mousePosition.x;
             float y = Input.mousePosition.y;
-            int x = num3 / mGraphics.zoomLevel;
+            int x2 = (int)x / mGraphics.zoomLevel;
             int y2 = (Screen.height - (int)y) / mGraphics.zoomLevel;
-            GameMidlet.gameCanvas.pointerMouse(x, y2);
+            GameMidlet.gameCanvas.pointerMouse(x2, y2);
         }
     }
 
@@ -419,29 +428,19 @@ public class Main : MonoBehaviour
 
     public static bool detectCompactDevice()
     {
-        if (iPhoneSettings.generation != iPhoneGeneration.iPhone && iPhoneSettings.generation != iPhoneGeneration.iPhone3G && iPhoneSettings.generation != iPhoneGeneration.iPodTouch1Gen)
+        if (iPhoneSettings.generation == iPhoneGeneration.iPhone || iPhoneSettings.generation == iPhoneGeneration.iPhone3G || iPhoneSettings.generation == iPhoneGeneration.iPodTouch1Gen || iPhoneSettings.generation == iPhoneGeneration.iPodTouch2Gen)
         {
-            return iPhoneSettings.generation != iPhoneGeneration.iPodTouch2Gen;
-        }
-        return false;
-    }
-
-    public static bool checkCanSendSMS()
-    {
-        if (iPhoneSettings.generation != iPhoneGeneration.iPhone3GS && iPhoneSettings.generation != iPhoneGeneration.iPhone4)
-        {
-            return iPhoneSettings.generation > iPhoneGeneration.iPodTouch4Gen;
+            return false;
         }
         return true;
     }
 
-    static Main()
+    public static bool checkCanSendSMS()
     {
-        res = "res";
-        numberQuit = 1;
-        typeClient = 4;
-        isMiniApp = true;
-        a = 1;
-        isCompactDevice = true;
+        if (iPhoneSettings.generation == iPhoneGeneration.iPhone3GS || iPhoneSettings.generation == iPhoneGeneration.iPhone4 || iPhoneSettings.generation > iPhoneGeneration.iPodTouch4Gen)
+        {
+            return true;
+        }
+        return false;
     }
 }
