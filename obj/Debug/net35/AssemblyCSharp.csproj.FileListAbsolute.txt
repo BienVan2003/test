@@ -1,0 +1,9 @@
+D:\NRO Jar\Nro242\bin\Debug\net35\Assembly-CSharp.dll
+D:\NRO Jar\Nro242\bin\Debug\net35\Assembly-CSharp.pdb
+D:\NRO Jar\Nro242\bin\Debug\net35\UnityEngine.dll
+D:\NRO Jar\Nro242\obj\Debug\net35\AssemblyCSharp.csproj.AssemblyReference.cache
+D:\NRO Jar\Nro242\obj\Debug\net35\AssemblyCSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\NRO Jar\Nro242\obj\Debug\net35\AssemblyCSharp.csproj.CoreCompileInputs.cache
+D:\NRO Jar\Nro242\obj\Debug\net35\Assembly.627F22B8.Up2Date
+D:\NRO Jar\Nro242\obj\Debug\net35\Assembly-CSharp.dll
+D:\NRO Jar\Nro242\obj\Debug\net35\Assembly-CSharp.pdb

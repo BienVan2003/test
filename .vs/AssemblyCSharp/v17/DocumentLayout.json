@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NRO Jar\\Nro242\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|d:\\nro jar\\nro242\\soundmn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|solutionrelative:soundmn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|d:\\nro jar\\nro242\\serverlistscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|solutionrelative:serverlistscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|d:\\nro jar\\nro242\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|solutionrelative:controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|d:\\nro jar\\nro242\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|d:\\nro jar\\nro242\\panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|solutionrelative:panel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|d:\\nro jar\\nro242\\gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|solutionrelative:gamescr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|d:\\nro jar\\nro242\\gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|solutionrelative:gamecanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|d:\\nro jar\\nro242\\actionchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40E31C3C-C111-4DED-8829-A5A4A9059B18}|AssemblyCSharp.csproj|solutionrelative:actionchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\NRO Jar\\Nro242\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "D:\\NRO Jar\\Nro242\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAQwHcAAACDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:15:09.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Panel.cs",
+              "DocumentMoniker": "D:\\NRO Jar\\Nro242\\Panel.cs",
+              "RelativeDocumentMoniker": "Panel.cs",
+              "ToolTip": "D:\\NRO Jar\\Nro242\\Panel.cs",
+              "RelativeToolTip": "Panel.cs",
+              "ViewState": "AQIAANgMAAAAAAAAAAApwOUMAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:06:45.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameScr.cs",
+              "DocumentMoniker": "D:\\NRO Jar\\Nro242\\GameScr.cs",
+              "RelativeDocumentMoniker": "GameScr.cs",
+              "ToolTip": "D:\\NRO Jar\\Nro242\\GameScr.cs",
+              "RelativeToolTip": "GameScr.cs",
+              "ViewState": "AQIAAKoEAAAAAAAAAAAlwMIEAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:02:37.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServerListScreen.cs",
+              "DocumentMoniker": "D:\\NRO Jar\\Nro242\\ServerListScreen.cs",
+              "RelativeDocumentMoniker": "ServerListScreen.cs",
+              "ToolTip": "D:\\NRO Jar\\Nro242\\ServerListScreen.cs",
+              "RelativeToolTip": "ServerListScreen.cs",
+              "ViewState": "AQIAAPYCAAAAAAAAAAAhwAEDAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:45:18.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameCanvas.cs",
+              "DocumentMoniker": "D:\\NRO Jar\\Nro242\\GameCanvas.cs",
+              "RelativeDocumentMoniker": "GameCanvas.cs",
+              "ToolTip": "D:\\NRO Jar\\Nro242\\GameCanvas.cs",
+              "RelativeToolTip": "GameCanvas.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAQwHEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:40:01.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "D:\\NRO Jar\\Nro242\\Controller.cs",
+              "RelativeDocumentMoniker": "Controller.cs",
+              "ToolTip": "D:\\NRO Jar\\Nro242\\Controller.cs",
+              "RelativeToolTip": "Controller.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAswIUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:38:54.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SoundMn.cs",
+              "DocumentMoniker": "D:\\NRO Jar\\Nro242\\SoundMn.cs",
+              "RelativeDocumentMoniker": "SoundMn.cs",
+              "ToolTip": "D:\\NRO Jar\\Nro242\\SoundMn.cs",
+              "RelativeToolTip": "SoundMn.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAAwJMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:30:41.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ActionChat.cs",
+              "DocumentMoniker": "D:\\NRO Jar\\Nro242\\ActionChat.cs",
+              "RelativeDocumentMoniker": "ActionChat.cs",
+              "ToolTip": "D:\\NRO Jar\\Nro242\\ActionChat.cs",
+              "RelativeToolTip": "ActionChat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:29:07.361Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
